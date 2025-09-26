@@ -1,0 +1,2 @@
+git config --global user.name "enriqueromerovargas2312"
+git config --global user.email enriqueromerovargas2312@alumnos.alborfp.com
