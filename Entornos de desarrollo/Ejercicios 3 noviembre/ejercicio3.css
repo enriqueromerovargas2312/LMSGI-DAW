@@ -1,10 +1,19 @@
-.caja {
-    background-color: aquamarine;
-    border: 5px solid;
-    padding: 10px;
-    width: 45%;
-    margin: 5px;
-    text-align: center;
-    display: inline-block;
-    vertical-align: top;
+.cabecera, .principal, .pie {
+border: 2px solid black;
+padding: 10px;
+margin: 5px;
+}
+.cabecera {
+background: red;
+text-align: center;
+}
+.principal {
+background: blue;
+float: left;
+width: 65%;
+}
+.pie {
+background: green;
+float: right;
+width: 30%;
 }
