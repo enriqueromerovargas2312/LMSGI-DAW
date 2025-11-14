@@ -46,8 +46,34 @@ clearInterval(rotYINT)
 if (ny>=360){ny=0}
 }
 }
+function bigImg(x) {
+    x.style.height = "64px";
+    x.style.width = "64px";
+}
+
+function normalImg(x) {
+    x.style.height = "32px";
+    x.style.width = "32px";
+}
 //-->
 </script>
+<style>
+    .animacion{
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        transition: width 2s, height 2s, background-color 3s;
+    }
+    .animacion:hover{
+        width: 300px;
+        height: 300px;
+        background-color: orange;
+    }
+    .img{
+        width: 100px;
+        height: 100px;
+    }
+</style>
 </head>
 <body>
 
@@ -59,6 +85,16 @@ if (ny>=360){ny=0}
 <button class="button button1" onclick="alert('Hello world!')"><span>Verde</span></button>
 <button class="button button2" onclick="alert('Hello world!')"><span>Azul</span></button>
 
+<img src="https://www.pngall.com/wp-content/uploads/5/Google-G-Logo-PNG-Image.png" alt="" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+
+<div class="animacion"></div>
+
+<video controls onplay="myFunction()">
+    <source src="https://www.youtube.com/embed/WIRK_pGdIdA" type="video/mp4">
+    <source src="https://www.youtube.com/embed/WIRK_pGdIdA" type="video/ogg">
+</video>
+
+<iframe width="1280" height="588" src="https://www.youtube.com/embed/WIRK_pGdIdA" title="chip" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 </body>
 </html>
