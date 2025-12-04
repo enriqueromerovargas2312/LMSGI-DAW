@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UD03EXAMEN_RomeroVargasEnrique</title>
+    <meta name="description" content="Esta es la descripción de la página web.">
+    <meta name="keywords" content="html, examen">
+    <meta name="autor" content="Enrique">
+    <meta name="application-name" content="examen.html">
+    <meta name="generator" content="VSCode">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="insertar_cv.html" method="GET">
+        <fieldset>
+            <legend>Rellenar</legend>
+            <div>
+                <label for="sexo-select">Sexo:</label>
+                <select name="sexo" id="sexo-select">
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="color">Elija un color:</label>
+                <input type="color" id="color" name="color_elegido">
+            </div>
+            <div>
+                <label for="fecha">Elija una fecha:</label>
+                <input type="date" id="fecha" name="fecha_elegida">
+            </div>
+            <br>
+            <div>
+                <input type="radio" id="java" name="lenguaje" value="lenguajejava">
+                <label for="java">Java</label>
+                <input type="radio" id="python" name="lenguaje" value="lenguajepython">
+                <label for="python">Python</label>
+                <input type="radio" id="html" name="lenguaje" value="lenguajehtml">
+                <label for="html">HTML</label>
+                <input type="radio" id="vb" name="lenguaje" value="lenguajevisual_basic">
+                <label for="vb">Visual Basic</label>
+                <input type="radio" id="css" name="lenguaje" value="lenguajecss">
+                <label for="css">CSS</label>
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" id="hombre_cb" name="sexo" value="sexohombre">
+                <label for="hombre_cb">Hombre</label>
+                <input type="checkbox" id="mujer_cb" name="sexo" value="sexomujer">
+                <label for="mujer_cb">Mujer</label>
+            </div>
+            <br>
+            <div>
+                <label for="fichero1">Elija un fichero:</label>
+                <input type="file" id="fichero1" name="archivo1">
+            </div>
+            <br>
+            <div>
+                <textarea name="comentarios" rows="8" cols="60" placeholder="Por favor, escriba aquí"></textarea>
+            </div>
+            <br>
+            <div>
+                <label for="instituto">Instituto</label>
+                <input type="text" id="instituto" name="instituto">
+            </div>
+            <div>
+                <label for="estudios">Estudios elegidos</label>
+                <input type="text" id="estudios" name="estudios">
+            </div>
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre">
+            </div>
+            <div>
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" name="apellidos">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Rellene las opciones siguientes</legend>
+            <div>
+                <input type="checkbox" id="windows" name="sistema" value="sistemawindows">
+                <label for="windows">Windows</label>
+                <input type="checkbox" id="mac" name="sistema" value="sistemamac">
+                <label for="mac">Mac</label>
+                <input type="checkbox" id="linux" name="sistema" value="sistemalinux">
+                <label for="linux">Linux</label>
+            </div>
+            <br>
+            <div>
+                <label for="hora">Elija una hora:</label>
+                <input type="time" id="hora" name="hora_elegida">
+            </div>
+            <br>
+            <div>
+                <input type="radio" id="amd" name="procesador" value="procesadoramd">
+                <label for="amd">AMD</label>
+                <input type="radio" id="intel_i5" name="procesador" value="procesadorintel_i5">
+                <label for="intel_i5">Intel i5</label>
+                <input type="radio" id="intel_i7" name="procesador" value="procesadorintel_i7">
+                <label for="intel_i7">Intel i7</label>
+            </div>
+            <br>
+            <div>
+                <label for="fichero2">Elija un fichero:</label>
+                <input type="file" id="fichero2" name="archivo2">
+            </div>
+            <br>
+        </fieldset>
+        <div>
+            <input type="submit" value="Enviar Formulario">
+            <input type="reset" value="Borrar los datos introducidos">
+        </div>
+    </form>
+</body>
+</html>
