@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ficha 3</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+    .contenedor {
+    display: flex;
+    gap: 20px;
+    }
+    .columna {
+    width: 50%;
+    background-color: #ddd;
+    padding: 20px;
+    @media (max-width: 768px){
+        width: 100%;
+        display: flexbox;
+        flex-direction: column;
+    }
+    }
+</style>
+</head>
+<body>
+<div class="contenedor">
+<div class="columna">Contenido principal</div>
+<div class="columna">Sidebar</div>
+</div>
+</body>
+</html>
